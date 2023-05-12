@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&family=Roboto:wght@100;500&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;*/
+
+body{
+    background-color: #181818;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#inicio{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.background{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .6;
+}
+
+.titulo{
+    display: block;
+    position: absolute;
+    width: 80%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.titulo h1{
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    color: #45bb00;
+}
+.titulo h2{
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Roboto Slab', serif;
+}
+
+.titulo .botao{
+    display: flex;
+    margin-top: 6%;
+    justify-content: center;
+}
+
+.botao button{
+    display: block;
+    padding: 10% 15%;
+    background-color: #45bb00;
+    border: none;
+    border-radius: .5em;
+    color: white;
+}
+main{
+    display: block;
+    position: relative;
+}
+
+#container_menu{
+    z-index: 1;
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: #181818;
+    border-bottom: .1em solid #2c2c2c;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    width: 8em;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: .4s;
+}
+
+.menu a:hover{
+    background-color: #9999;
+}
+
+#item_principal{
+    background-color: #4caa15;
+    color: #fff;
+}
+
+#item_principal a:hover{
+    background-color: #999999;
+    color: #fff;
+}
+
+.conteudo{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#sobre{
+    display: block;
+    position: relative;
+    text-align: justify;
+    padding: 0 4%;
+}
+
+#sobre h3{
+    padding-top: 4%;
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+#sobre p{
+    font-size: 1em;
+    margin-bottom: 2%;
+}
+
+#desempenho{
+    display: block;
+    position: relative;
+    padding-top: 6%;
+}
+
+
+.grafico h3{
+    font-size: 1.6em;
+    margin-bottom: 4%;
+}
+
+.grafico{
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+.grafico img{
+    width: 60%;
+}
+
+.comparacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .3em;
+    font-size: .7em;
+}
+
+#bloco1{
+    width: 1em;
+    height: 1em;
+    background-color: #4caa15;
+}
+#bloco2{
+    width: 1em;
+    height: 1em;
+    background-color: #999999;
+}
+
+#caracteristicas{
+    display: block;
+    position: relative;
+    margin-top: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: #4caa15;
+}
+
+#caracteristicas h3{
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: 2%;
+}
+
+.elemento{
+    display: block;
+    position: relative;
+    width: 25%;
+    height: 35vh;
+    background: linear-gradient(to right, #181818, #2c2c2c);
+    border-radius: 3em;
+    padding: 2%;
+    box-shadow: -0.1em 0.1em .4em #2c2c2c;
+    transition: .5s;
+}
+
+.elemento:hover {
+    transform: scale(1.02);
+    box-shadow: -0.3em 0.3em 1em #2c2c2c;
+}
+.elemento h5{
+    text-align: center;
+    padding: 4%;
+    font-size: 1.3em;
+}
+
+.elemento p{
+    font-size: .9em;
+    text-align: justify;
+}
+
+#especificacoes{
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+#especificacoes h3{
+    font-size: 1.6em;
+    display: block;
+    position: relative;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+#especificacoes table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+#especificacoes table th{
+    text-align: left;
+}
+
+#especificacoes table th, td{
+    border-top: .2em solid #999999;
+    padding: 1%;
+    width: 30%;
+}
